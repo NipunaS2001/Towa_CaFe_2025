@@ -4,6 +4,19 @@
 
 ---
 
+#Screenshots
+screencapture-127-0-0-1-5500-index-html-2025-06-11-03_24_38.png
+ <br>
+screencapture-127-0-0-1-5500-menu-html-2025-06-11-03_25_20.png
+<br>
+screencapture-127-0-0-1-5500-news-html-2025-06-11-03_25_03.png
+<br>
+screencapture-127-0-0-1-5500-contact-html-2025-06-11-03_25_36.png
+
+
+
+
+
 📌 サイト概要:
 - カフェの最新情報、お知らせ
 - メニューの紹介（フード & ドリンク）
@@ -32,7 +45,7 @@
 
 📧 お問い合わせ:
 本サイトに関するお問い合わせは以下のメールアドレスまでご連絡ください。  
-info@towacafe.jp
+
 
 ---
 
