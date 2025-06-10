@@ -4,14 +4,14 @@
 
 ---
 
-#Screenshots
-screencapture-127-0-0-1-5500-index-html-2025-06-11-03_24_38.png
- <br>
-screencapture-127-0-0-1-5500-menu-html-2025-06-11-03_25_20.png
+<H1>Screenshots</H1>
+[screencapture-127-0-0-1-5500-index-html-2025-06-11-03_24_38.png](https://github.com/NipunaS2001/Towa_CaFe_2025/blob/main/screencapture-127-0-0-1-5500-index-html-2025-06-11-03_24_38.png)
+ <br>[
+screencapture-127-0-0-1-5500-menu-html-2025-06-11-03_25_20.png](https://github.com/NipunaS2001/Towa_CaFe_2025/blob/main/screencapture-127-0-0-1-5500-menu-html-2025-06-11-03_25_20.png)
+<br>[
+screencapture-127-0-0-1-5500-news-html-2025-06-11-03_25_03.png](https://github.com/NipunaS2001/Towa_CaFe_2025/blob/main/screencapture-127-0-0-1-5500-contact-html-2025-06-11-03_25_36.png)
 <br>
-screencapture-127-0-0-1-5500-news-html-2025-06-11-03_25_03.png
-<br>
-screencapture-127-0-0-1-5500-contact-html-2025-06-11-03_25_36.png
+[screencapture-127-0-0-1-5500-contact-html-2025-06-11-03_25_36.png](https://github.com/NipunaS2001/Towa_CaFe_2025/blob/main/screencapture-127-0-0-1-5500-news-html-2025-06-11-03_25_03.png)
 
 
 
