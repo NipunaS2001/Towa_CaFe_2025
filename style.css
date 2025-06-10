@@ -1,0 +1,492 @@
+/* =========================
+   Reset and Base
+========================= */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
+  line-height: 1.7;
+  color: #432;
+  background-color: #fffaf5;
+  margin: 0;
+  padding: 0;
+}
+
+/* =========================
+   Links and Images
+========================= */
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus-visible {
+  color: #0bd;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* =========================
+   Utility Classes
+========================= */
+.align-center {
+  text-align: center;
+}
+
+.font-english {
+  font-family: 'Philosopher', sans-serif;
+  font-weight: normal;
+}
+
+/* =========================
+   Header and Navbar
+========================= */
+.page-header {
+  padding: 1rem 2rem;
+  background-color: #fffaf5;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo {
+  width: 210px;
+  max-width: 100%;
+  height: auto;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.1));
+  transition: filter 0.3s ease;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  font-size: 1.4rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav a {
+  color: #432;
+  font-weight: 600;
+  padding: 0.5rem 0;
+  border-bottom: 3px solid transparent;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.main-nav a:hover,
+.main-nav a:focus-visible {
+  color: #0bd;
+  border-bottom: 3px solid #0bd;
+}
+
+.main-nav a.active {
+  color: #007a8a;
+  border-bottom: 3px solid #007a8a;
+  font-weight: 700;
+}
+
+/* =========================
+   Typography
+========================= */
+.page-title,
+.heading-large {
+  font-size: 3rem;
+  text-align: center;
+  line-height: 1.4;
+  margin: 2rem 0 1rem;
+  color: #432;
+}
+
+.heading-large {
+  margin-bottom: 1rem;
+}
+
+.heading-medium {
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem 0 1rem;
+}
+
+/* =========================
+   Buttons
+========================= */
+.btn {
+  display: inline-block;
+  font-size: 1.5rem;
+  background-color: #0bd;
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  background-color: #0090aa;
+  outline: none;
+}
+
+/* =========================
+   Cover Sections
+========================= */
+.cover {
+  background-size: cover;
+  background-position: center bottom;
+  height: 800px;
+}
+
+.cover-home {
+  background-image: url('../images/cover-home-s.webp');
+}
+
+.cover-news,
+.cover-contact {
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.cover-news {
+  background-image: url('../images/cover-news-l.webp');
+}
+
+.cover-contact {
+  background-image: url('../images/cover-contact-l.webp');
+}
+
+.cover-news .page-title,
+.cover-contact .page-title {
+  font-size: 2.5rem;
+  margin: 0;
+  color: #000;
+}
+
+/* =========================
+   About Section
+========================= */
+.about {
+  max-width: 736px;
+  padding: 0 1.5rem;
+  margin: 3rem auto 0;
+  color: #432;
+}
+
+.about p {
+  margin-bottom: 3rem;
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+/* =========================
+   Menu Section
+========================= */
+.menu-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 3rem 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.menu-item {
+  background-color: #f6f5f8;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.menu-item:hover,
+.menu-item:focus-within {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.menu-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.menu-text {
+  padding: 1rem;
+  text-align: center;
+  color: #555;
+}
+
+.menu-text h2,
+.menu-text h3 {
+  color: #432;
+  margin: 0.5em 0 1em;
+  font-weight: 700;
+}
+
+.menu-drinks {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.menu-drinks ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* =========================
+   News Section
+========================= */
+.news-section {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+
+.news-item {
+  margin: 1.5rem 0;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #ccc;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.news-item h2 {
+  margin-bottom: 0.5rem;
+  color: #432;
+  font-weight: 700;
+}
+
+.news-item time {
+  display: block;
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+/* =========================
+   Contact Section
+========================= */
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem 3rem;
+}
+
+.location {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 3rem;
+  justify-content: center;
+}
+
+.location-info {
+  flex: 1 1 320px;
+  max-width: 450px;
+}
+
+.location-info h3 {
+  margin-bottom: 1rem;
+  color: #432;
+}
+
+.location-map {
+  flex: 1 1 320px;
+  max-width: 720px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+table.info {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #432;
+}
+
+table.info th,
+table.info td {
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid #c9c2bc;
+  text-align: left;
+}
+
+table.info th {
+  font-weight: normal;
+  width: 120px;
+  color: #6b5e4b;
+}
+
+.email p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #432;
+}
+
+.sns {
+  margin-top: 3rem;
+  display: grid;
+  gap: 3rem;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sns-item {
+  color: #432;
+}
+
+.sns-item h3 {
+  margin-bottom: 0.8rem;
+}
+
+.sns-item a {
+  color: #0bd;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.sns-item a:hover,
+.sns-item a:focus-visible {
+  color: #007a8a;
+  outline: none;
+}
+
+.twitter-timeline {
+  width: 100% !important;
+  min-height: 520px;
+  border: none !important;
+}
+
+.sns-youtube iframe {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+  margin-bottom: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.15);
+}
+
+/* =========================
+   Footer
+========================= */
+.page-footer {
+  background-color: #f3ebe1;
+  background-image: url('../images/footer-s.webp');
+  background-size: cover;
+  background-position: center;
+  padding: 6rem 1.5rem 3rem;
+  text-align: center;
+  color: #432;
+  font-size: 1rem;
+  position: relative;
+}
+
+.page-footer .info {
+  width: 100%;
+  max-width: 544px;
+  margin: 0 auto 3rem;
+  border-spacing: 0;
+}
+
+.page-footer .info th,
+.page-footer .info td {
+  border-bottom: 1px solid #c9c2bc;
+  padding: 1rem;
+}
+
+.page-footer .info th {
+  text-align: left;
+  font-weight: normal;
+}
+
+.page-footer .copyright {
+  background-color: #432;
+  color: #fff;
+  padding: 2rem 0;
+  margin-top: 3rem;
+}
+
+/* =========================
+   Responsive
+========================= */
+@media (max-width: 900px) {
+  .location {
+    flex-direction: column;
+    align-items: center;
+  }
+  .location-info,
+  .location-map {
+    max-width: 100%;
+  }
+  .sns {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+  .sns-youtube iframe {
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .main-nav {
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .menu-section {
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem;
+  }
+
+  .page-title,
+  .heading-large {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+
+  .news-section {
+    padding: 1rem;
+  }
+}
